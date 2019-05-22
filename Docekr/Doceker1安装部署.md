@@ -2,7 +2,7 @@
 >that first.        
 in the old fashion，附上先鉴链接：       
 [官网安装手册](https://docs.docker.com/install/ )：https://docs.docker.com/install/       
-[Git安装经验](https://yeasy.gitbooks.io/docker_practice/content/install/ubuntu.html):https://yeasy.gitbooks.io/docker_practice/content/install/ubuntu.html
+[Git安装经验](https://yeasy.gitbooks.io/docker_practice/content/install/ubuntu.html)：https://yeasy.gitbooks.io/docker_practice/content/install/ubuntu.html
 
 #### 准备工作
 
