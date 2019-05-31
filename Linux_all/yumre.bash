@@ -9,9 +9,9 @@ exit 1
 
 	else 
 sleep 1	
-		echo "			++++++++++++++++++
-			+startting to run+
-			++++++++++++++++++"
+		echo "		++++++++++++++++++
+				+startting to run+
+				++++++++++++++++++"
 
 #O: remove old rpm packages
 	if	rpm -qa |grep yum > /dev/null 2>&1
@@ -24,9 +24,11 @@ sleep 1
 
 
 #1: get new prm packages for yum
-	cp -a yum.repo /usr/local/src
+	cp -a yum.repo /etc/yum.repos.d/CentOS-Base.repo
 	cd /usr/local/src
-	echo "start downlaoding packages for yum install"
+	echo "		++++++++++++++++++++++++++++++++++++++++++++
+			+start downlaoding packages for yum install+
+			++++++++++++++++++++++++++++++++++++++++++++"
 	
 wget http://vault.centos.org/7.5.1804/os/x86_64/Packages/yum-3.4.3-158.el7.centos.noarch.rpm  > /dev/null 2>&1
 	echo "[====>----------------]20%"
@@ -55,9 +57,9 @@ sleep 2
 
 #3: update yum soures
 #	wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo 
-	echo "       #################################
-	      #######update your yum soures####
-	      #################################"
+	echo "		++++++++++++++++++++++++
+	      		+update your yum soures+
+	      		++++++++++++++++++++++++"
 	cat /home/an/yum.repo > /etc/yum.repo.d/CentOS-Base.repo
 
 	yum clean all && yum makecache 
