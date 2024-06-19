@@ -1,0 +1,4 @@
+正常SVN安装好后，在windows中是有图标状态的；
+如果不显示状态图标，可以先检查svn设置，使用安装包进行修复，
+可以检查注册表查看\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers下面Tortoise的配置被其他软件顶下去了
+将所有Tortoise所有的文件夹名称中加入空格使它们排在最前面，然后重启windows资源管理，就修复了。
